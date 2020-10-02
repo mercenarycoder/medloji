@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Order Date:22 Feb 2020"
+    android:id="@+id/order_date"
+    android:textSize="16sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/medicine_recycler"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Medicines :"
+            android:textSize="14sp"
+            android:gravity="center|top"
+            android:paddingStart="5dp"
+            android:layout_weight="0.9"
+            android:textColor="#000"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1.Valporl (500mg)"
+            android:id="@+id/medicines_quantity"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_weight="0.8"
+            android:textColor="#5F5F5F"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1 Strip"
+            android:id="@+id/medicines_strip"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_weight="0.8"
+            android:textColor="#F3B808"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Net Payable : "
+      android:textSize="14sp"
+      android:gravity="center"
+      android:layout_weight=".9"
+      android:textColor="#000"
+      android:paddingStart="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Rs.100"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/amount_final"
+        android:textColor="#000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        >
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dip"
+            android:layout_centerInParent="true"
+            android:background="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rs.100"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:id="@+id/amount_partial"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:id="@+id/discount"
+        android:textColor="#FFC107"
+        android:text="Saving 20%"
+        android:gravity="center|left"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:layout_weight=".9"
+        android:textColor="#000"
+        android:gravity="center|top"
+        android:text="Mode Payment:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:id="@+id/payment_mode"
+            android:gravity="center|top"
+            android:text="Cash On Delivery"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:id="@+id/status_report"
+            android:textColor="#06A50F"
+            android:layout_marginBottom="7dp"
+            android:text="Mode Payment:"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

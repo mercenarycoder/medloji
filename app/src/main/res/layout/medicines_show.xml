@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:baselineAligned="true"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="No Record Found"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:enabled="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/highlight"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Record Found"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:enabled="false"
+        android:id="@+id/no_medicine"
+        android:visibility="invisible"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_refresh"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/recycler_medicine"
+            android:layout_marginBottom="0dp"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

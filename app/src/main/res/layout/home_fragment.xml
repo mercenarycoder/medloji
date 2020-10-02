@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@drawable/edit_text">
+
+    <AutoCompleteTextView
+        android:id="@+id/search_key"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.19"
+
+        android:backgroundTint="#fff"
+        android:fontFamily="@font/montserratalternates_medium"
+        android:hint="Search key"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="#fff"
+        android:textColorHint="@color/colorAccent" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/search"
+        android:layout_weight="1"
+        android:id="@+id/now_search"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:tint="@color/colorPrimary"
+        />
+</LinearLayout>
+ <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+     android:id="@+id/swipe_category"
+     android:layout_marginBottom="59dp"
+        android:layout_height="wrap_content">
+ <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="59dp"
+        android:id="@+id/category_recycler"/>
+ </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:baselineAligned="false"
+      android:layout_alignParentBottom="true"
+      android:id="@+id/prescribtion_uploader"
+      android:layout_marginBottom="20dp"
+      android:orientation="horizontal">
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/ic_uploadpres"
+          android:layout_weight="1"
+          android:tint="#797272"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Upload Latest Prescription First"
+          android:textSize="16sp"
+          android:layout_weight="0.16"
+          android:gravity="center|left"/>
+  </LinearLayout>
+</RelativeLayout>
